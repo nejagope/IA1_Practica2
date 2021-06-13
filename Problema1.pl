@@ -133,5 +133,5 @@ abuelo(P1, P2) :-     padre(P, P2), padre(P1, P)
     		        ; madre(M, P2), padre(P1, M)
                     ; madre(M, P2), madre(P1, M).
 
-culpable(C) :- hermana(H, C), primo(H, clark), tio(barry, H).
+culpable(C) :- hermana(H, C), primo(H, clark), tio(barry, H), write('El culpable es '), write(C), nl.
 
