@@ -135,3 +135,13 @@ abuelo(P1, P2) :-     padre(P, P2), padre(P1, P)
 
 culpable(C) :- hermana(H, C), primo(H, clark), tio(barry, H), write('El culpable es '), write(C), nl.
 
+arbol(_) :-   write('------------------------------------------------------------------'), nl
+			, write('                      _ Marta          Bruce _                   '), nl
+			, write('                 /                 /\\           \\          '), nl
+			, write('             /                 /      \\            \\          '), nl
+			, write('         /                 /            \\             \\          '), nl
+			, write('       May  Ben         Diana Peter    Barry Pepper  Rachel Enrique'), nl
+			, write('          |                  |              |              |       '), nl
+			, write('   /      |     \\         /     \\         /   \\          /   \\   '), nl
+			, write('Lorenzo Sergio  Ezio    Mary    Harry   Tony  Lara     Clark  Lois'), nl
+			, write('------------------------------------------------------------------'), nl.
